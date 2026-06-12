@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { noalph } from '@noalph/vite-plugin'
+import { noalph } from '@alphaisyour/vite-plugin'
 
 export default defineConfig({
   plugins: [

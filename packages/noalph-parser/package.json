@@ -1,6 +1,6 @@
 {
-  "name": "@noalph/parser",
-  "version": "0.1.0",
+  "name": "@alphaisyour/parser",
+  "version": "0.2.0",
   "description": "Parser file .eno menjadi AST untuk ekosistem noalphjs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,7 +21,7 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@noalph/shared": "workspace:*"
+    "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "*",

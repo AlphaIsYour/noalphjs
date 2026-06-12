@@ -43,11 +43,11 @@ Buka `http://localhost:3000` — kamu akan melihat halaman default dari `src/App
 
 | Package                | Deskripsi                 |
 | ---------------------- | ------------------------- |
-| `@noalph/core`         | Runtime inti framework    |
-| `@noalph/parser`       | Parser `.eno` → AST       |
-| `@noalph/compiler`     | Compiler AST → JavaScript |
-| `@noalph/renderer-dom` | DOM renderer              |
-| `@noalph/vite-plugin`  | Plugin Vite untuk `.eno`  |
+| `@alphaisyour/core`         | Runtime inti framework    |
+| `@alphaisyour/parser`       | Parser `.eno` → AST       |
+| `@alphaisyour/compiler`     | Compiler AST → JavaScript |
+| `@alphaisyour/renderer-dom` | DOM renderer              |
+| `@alphaisyour/vite-plugin`  | Plugin Vite untuk `.eno`  |
 | `create-noalph-app`    | CLI scaffolding           |
 
 ## Kontribusi

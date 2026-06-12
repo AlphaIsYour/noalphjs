@@ -1,4 +1,4 @@
-import { mount } from '@noalph/renderer-dom'
+import { mount } from '@alphaisyour/renderer-dom'
 import App from './App.eno'
 
 mount({ container: document.getElementById('app')!, component: App })

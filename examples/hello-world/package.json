@@ -1,6 +1,6 @@
 {
-  "name": "@noalph/example-hello-world",
-  "version": "0.1.0",
+  "name": "@alphaisyour/example-hello-world",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,10 +8,10 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@noalph/renderer-dom": "workspace:*"
+    "@alphaisyour/renderer-dom": "workspace:*"
   },
   "devDependencies": {
-    "@noalph/vite-plugin": "workspace:*",
+    "@alphaisyour/vite-plugin": "workspace:*",
     "typescript": "*",
     "vite": "^5.1.0"
   }

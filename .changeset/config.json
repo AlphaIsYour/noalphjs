@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@noalph/docs", "@noalph/playground", "@noalph/website"]
+  "ignore": []
 }

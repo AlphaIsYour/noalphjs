@@ -1,6 +1,6 @@
 {
-  "name": "@noalph/compiler",
-  "version": "0.1.0",
+  "name": "@alphaisyour/compiler",
+  "version": "0.2.0",
   "description": "Compiler .eno ke JavaScript untuk ekosistem noalphjs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,8 +21,8 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@noalph/parser": "workspace:*",
-    "@noalph/shared": "workspace:*"
+    "@alphaisyour/parser": "workspace:*",
+    "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "*",

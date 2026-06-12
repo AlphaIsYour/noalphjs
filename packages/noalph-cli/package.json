@@ -1,6 +1,6 @@
 {
-  "name": "@noalph/cli",
-  "version": "0.1.0",
+  "name": "@alphaisyour/cli",
+  "version": "0.2.0",
   "description": "CLI resmi noalphjs — noalph dev, build, preview",
   "type": "module",
   "bin": {
@@ -23,7 +23,7 @@
     "prepublishOnly": "pnpm build"
   },
   "dependencies": {
-    "@noalph/shared": "workspace:*",
+    "@alphaisyour/shared": "workspace:*",
     "picocolors": "^1.0.0",
     "vite": "^5.1.0"
   },

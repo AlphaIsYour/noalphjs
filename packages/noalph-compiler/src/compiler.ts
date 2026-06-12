@@ -1,5 +1,5 @@
-import { parse } from '@noalph/parser'
-import type { EnoNode } from '@noalph/shared'
+import { parse } from '@alphaisyour/parser'
+import type { EnoNode } from '@alphaisyour/shared'
 import type { CompileOptions, CompileResult } from './types'
 
 export function compile(source: string, options: CompileOptions = {}): CompileResult {

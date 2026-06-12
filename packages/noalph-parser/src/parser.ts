@@ -1,4 +1,4 @@
-import type { EnoNode } from '@noalph/shared'
+import type { EnoNode } from '@alphaisyour/shared'
 import { tokenize } from './tokenizer'
 import type { ParseResult } from './types'
 

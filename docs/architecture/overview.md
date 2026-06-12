@@ -20,20 +20,20 @@ DOM Elements
 ## Dependency Graph Package
 
 ```
-@noalph/core
-├── @noalph/compiler
-│   └── @noalph/parser
-│       └── @noalph/shared
-├── @noalph/renderer-dom
-│   └── @noalph/shared
-└── @noalph/shared (fondasi, tidak boleh depend ke lain)
+@alphaisyour/core
+├── @alphaisyour/compiler
+│   └── @alphaisyour/parser
+│       └── @alphaisyour/shared
+├── @alphaisyour/renderer-dom
+│   └── @alphaisyour/shared
+└── @alphaisyour/shared (fondasi, tidak boleh depend ke lain)
 
-@noalph/vite-plugin
-├── @noalph/compiler
-└── @noalph/shared
+@alphaisyour/vite-plugin
+├── @alphaisyour/compiler
+└── @alphaisyour/shared
 
-@noalph/cli
-└── @noalph/shared
+@alphaisyour/cli
+└── @alphaisyour/shared
 
 create-noalph-app
 (standalone, tidak depend ke packages monorepo)
@@ -41,7 +41,7 @@ create-noalph-app
 
 ## Aturan Dependency
 
-1. `@noalph/shared` adalah dasar — tidak boleh import dari package lain dalam monorepo
+1. `@alphaisyour/shared` adalah dasar — tidak boleh import dari package lain dalam monorepo
 2. Dependency hanya boleh satu arah: ke bawah (ke paket yang lebih fundamental)
 3. `apps/*` boleh depend ke semua `packages/*`
 4. `packages/*` tidak boleh import dari `apps/*`

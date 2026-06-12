@@ -1,6 +1,6 @@
 import { preview } from 'vite'
 import path from 'path'
-import { DEFAULT_PORT } from '@noalph/shared'
+import { DEFAULT_PORT } from '@alphaisyour/shared'
 
 export async function runPreview(args: string[]) {
   const portArg = args.find(a => a.startsWith('--port='))

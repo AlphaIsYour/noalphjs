@@ -1,6 +1,6 @@
 {
-  "name": "@noalph/core",
-  "version": "0.1.0",
+  "name": "@alphaisyour/core",
+  "version": "0.2.0",
   "description": "Runtime inti ekosistem noalphjs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,10 +21,10 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@noalph/compiler": "workspace:*",
-    "@noalph/parser": "workspace:*",
-    "@noalph/renderer-dom": "workspace:*",
-    "@noalph/shared": "workspace:*"
+    "@alphaisyour/compiler": "workspace:*",
+    "@alphaisyour/parser": "workspace:*",
+    "@alphaisyour/renderer-dom": "workspace:*",
+    "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "*",

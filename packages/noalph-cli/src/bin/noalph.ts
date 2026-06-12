@@ -28,7 +28,7 @@ async function main() {
     }
     case '--version':
     case '-v': {
-      const { NOALPH_VERSION } = await import('@noalph/shared')
+      const { NOALPH_VERSION } = await import('@alphaisyour/shared')
       console.log(`noalphjs v${NOALPH_VERSION}`)
       break
     }

@@ -29,11 +29,11 @@ importers:
 
   examples/hello-world:
     dependencies:
-      '@noalph/renderer-dom':
+      '@alphaisyour/renderer-dom':
         specifier: workspace:*
         version: link:../../packages/noalph-renderer-dom
     devDependencies:
-      '@noalph/vite-plugin':
+      '@alphaisyour/vite-plugin':
         specifier: workspace:*
         version: link:../../packages/noalph-vite-plugin
       typescript:
@@ -64,7 +64,7 @@ importers:
 
   packages/noalph-cli:
     dependencies:
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
       picocolors:
@@ -86,10 +86,10 @@ importers:
 
   packages/noalph-compiler:
     dependencies:
-      '@noalph/parser':
+      '@alphaisyour/parser':
         specifier: workspace:*
         version: link:../noalph-parser
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
     devDependencies:
@@ -102,16 +102,16 @@ importers:
 
   packages/noalph-core:
     dependencies:
-      '@noalph/compiler':
+      '@alphaisyour/compiler':
         specifier: workspace:*
         version: link:../noalph-compiler
-      '@noalph/parser':
+      '@alphaisyour/parser':
         specifier: workspace:*
         version: link:../noalph-parser
-      '@noalph/renderer-dom':
+      '@alphaisyour/renderer-dom':
         specifier: workspace:*
         version: link:../noalph-renderer-dom
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
     devDependencies:
@@ -124,7 +124,7 @@ importers:
 
   packages/noalph-parser:
     dependencies:
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
     devDependencies:
@@ -137,7 +137,7 @@ importers:
 
   packages/noalph-renderer-dom:
     dependencies:
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
     devDependencies:
@@ -162,10 +162,10 @@ importers:
 
   packages/noalph-vite-plugin:
     dependencies:
-      '@noalph/compiler':
+      '@alphaisyour/compiler':
         specifier: workspace:*
         version: link:../noalph-compiler
-      '@noalph/shared':
+      '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
     devDependencies:

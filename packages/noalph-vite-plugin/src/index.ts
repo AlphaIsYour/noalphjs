@@ -1,5 +1,5 @@
-import { compile } from '@noalph/compiler'
-import { isEnoFile } from '@noalph/shared'
+import { compile } from '@alphaisyour/compiler'
+import { isEnoFile } from '@alphaisyour/shared'
 import type { Plugin } from 'vite'
 
 export interface NoAlphViteOptions {

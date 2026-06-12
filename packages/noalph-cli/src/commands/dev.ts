@@ -1,6 +1,6 @@
 import { createServer } from 'vite'
 import path from 'path'
-import { DEFAULT_PORT, DEFAULT_HOST } from '@noalph/shared'
+import { DEFAULT_PORT, DEFAULT_HOST } from '@alphaisyour/shared'
 
 export async function runDev(args: string[]) {
   const portArg = args.find(a => a.startsWith('--port='))
