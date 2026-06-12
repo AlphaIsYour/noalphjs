@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "08:00"
+      timezone: "Asia/Jakarta"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "@types/*"
+          - "typescript"
+          - "vitest"
+          - "prettier"
+      turbo:
+        patterns:
+          - "turbo"
+    reviewers:
+      - "AlphaIsYour"
+    labels:
+      - "dependencies"
+      - "security"
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "node"
+        update-types: ["version-update:semver-major"]

@@ -1,0 +1,20 @@
+# CODEOWNERS noalphjs
+# Format: <path> <owner>
+# Semua perubahan membutuhkan review dari minimal 1 owner
+
+# Default owner untuk semua file
+* @AlphaIsYour
+
+# Package inti — butuh review ketat
+/packages/noalph-compiler/ @AlphaIsYour
+/packages/noalph-parser/ @AlphaIsYour
+/packages/noalph-renderer-dom/ @AlphaIsYour
+/packages/noalph-core/ @AlphaIsYour
+
+# Security dan governance
+/.github/ @AlphaIsYour
+/SECURITY.md @AlphaIsYour
+
+# CLI dan scaffolding
+/packages/noalph-cli/ @AlphaIsYour
+/packages/create-noalphjs/ @AlphaIsYour

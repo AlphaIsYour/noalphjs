@@ -1,0 +1,41 @@
+{
+  "name": "noalphjs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "noalphjs — Framework JavaScript/TypeScript modern dengan ekstensi komponen .eno",
+  "keywords": ["framework", "javascript", "typescript", "noalphjs", "eno", "indonesia"],
+  "homepage": "https://noalphjs.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlphaIsYour/noalphjs.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && find . -name 'node_modules' -type d -not -path '*/.git/*' | xargs rm -rf",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=!./apps/* && changeset publish",
+    "bootstrap": "pnpm install && turbo run build --filter=./packages/*",
+    "doctor": "bash tools/orchestrator/orchestrator.sh doctor",
+    "setup": "bash tools/orchestrator/orchestrator.sh setup"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.0",
+    "prettier": "^3.2.4",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.1"
+}

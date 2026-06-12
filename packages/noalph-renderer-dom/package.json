@@ -1,0 +1,31 @@
+{
+  "name": "@noalph/renderer-dom",
+  "version": "0.1.0",
+  "description": "DOM renderer untuk komponen .eno",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@noalph/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "typescript": "*",
+    "vitest": "*"
+  }
+}

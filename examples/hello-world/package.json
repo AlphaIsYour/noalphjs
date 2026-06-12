@@ -1,0 +1,18 @@
+{
+  "name": "@noalph/example-hello-world",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@noalph/renderer-dom": "workspace:*"
+  },
+  "devDependencies": {
+    "@noalph/vite-plugin": "workspace:*",
+    "typescript": "*",
+    "vite": "^5.1.0"
+  }
+}

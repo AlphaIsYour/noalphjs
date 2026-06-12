@@ -1,0 +1,52 @@
+name: Nightly Canary
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # Setiap hari pukul 20:00 WIB (13:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  canary:
+    name: Publish Canary
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install --frozen-lockfile
+      - name: Build packages
+        run: pnpm turbo run build --filter=./packages/*
+      - name: Run tests
+        run: pnpm turbo run test
+      - name: Bump canary version
+        run: |
+          DATE=$(date +%Y%m%d%H%M)
+          for pkg in packages/*/; do
+            if [ -f "$pkg/package.json" ]; then
+              node -e "
+                const fs = require('fs');
+                const p = JSON.parse(fs.readFileSync('$pkg/package.json','utf8'));
+                if (!p.private) {
+                  const base = p.version.split('-')[0];
+                  p.version = base + '-canary.' + '$DATE';
+                  fs.writeFileSync('$pkg/package.json', JSON.stringify(p, null, 2) + '\n');
+                  console.log('Bumped', p.name, 'to', p.version);
+                }
+              "
+            fi
+          done
+      - name: Publish canary
+        run: pnpm changeset publish --tag canary
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,19 @@
+<script>
+  let nama = 'Dunia'
+</script>
+
+<div class="hello">
+  <h1>Halo, {nama}!</h1>
+  <p>Ini adalah komponen .eno pertama di noalphjs.</p>
+</div>
+
+<style>
+  .hello {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #e8e8f0;
+  }
+  h1 { color: #a78bfa; font-size: 3rem; }
+  p { color: rgba(232,232,240,0.6); }
+</style>

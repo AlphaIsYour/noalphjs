@@ -1,0 +1,21 @@
+name: ✨ Feature Request
+description: Usulkan fitur baru untuk noalphjs
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivasi
+      description: Masalah apa yang ingin diselesaikan?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang Diusulkan
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif yang Sudah Dipertimbangkan

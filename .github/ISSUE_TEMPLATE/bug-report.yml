@@ -1,0 +1,47 @@
+name: 🐛 Bug Report
+description: Laporkan bug yang ditemukan di noalphjs
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Terima kasih sudah melaporkan bug! Mohon isi form berikut dengan lengkap.
+  - type: input
+    id: version
+    attributes:
+      label: Versi noalphjs
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan bug yang terjadi
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Langkah Reproduksi
+      description: Langkah-langkah untuk mereproduksi bug
+      placeholder: |
+        1. Buat file App.eno dengan...
+        2. Jalankan npm run dev
+        3. Lihat error di...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Perilaku yang Diharapkan
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      value: |
+        - OS:
+        - Node.js:
+        - pnpm:
+        - Browser:
