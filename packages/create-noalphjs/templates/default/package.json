@@ -1,0 +1,23 @@
+{
+  "name": "my-noalph-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "noalph:dev": "noalph dev --open",
+    "noalph:build": "noalph build",
+    "noalph:preview": "noalph preview"
+  },
+  "dependencies": {
+    "@alphaisyour/renderer-dom": "^0.1.0"
+  },
+  "devDependencies": {
+    "@alphaisyour/cli": "^0.1.0",
+    "@alphaisyour/vite-plugin": "^0.1.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0"
+  }
+}
