@@ -1,7 +1,7 @@
 {
-  "name": "@alphaisyour/compiler",
-  "version": "0.2.2",
-  "description": "Compiler .eno ke JavaScript untuk ekosistem noalphjs",
+  "name": "@alphaisyour/image",
+  "version": "0.2.0",
+  "description": "Optimasi gambar untuk noalphjs — lazy load, WebP, srcset otomatis",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,7 +21,6 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@alphaisyour/parser": "workspace:*",
     "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {

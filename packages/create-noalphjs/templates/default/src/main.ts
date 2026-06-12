@@ -4,7 +4,10 @@ import App from './App.eno'
 const container = document.getElementById('app')
 
 if (!container) {
-  throw new Error('[noalphjs] Elemen #app tidak ditemukan di index.html')
+  console.error('[noalphjs] Elemen #app tidak ditemukan di index.html')
+} else {
+  mount({ container, component: App })
+  if (typeof (window as any).__noalph_ready === 'function') {
+    ;(window as any).__noalph_ready()
+  }
 }
-
-mount({ container, component: App })

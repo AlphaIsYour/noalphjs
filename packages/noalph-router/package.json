@@ -1,7 +1,7 @@
 {
-  "name": "@alphaisyour/compiler",
-  "version": "0.2.2",
-  "description": "Compiler .eno ke JavaScript untuk ekosistem noalphjs",
+  "name": "@alphaisyour/router",
+  "version": "0.2.0",
+  "description": "File-based router untuk noalphjs — pages/ jadi URL otomatis",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,7 +21,6 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@alphaisyour/parser": "workspace:*",
     "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {

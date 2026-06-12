@@ -1,7 +1,7 @@
 {
-  "name": "@alphaisyour/compiler",
-  "version": "0.2.2",
-  "description": "Compiler .eno ke JavaScript untuk ekosistem noalphjs",
+  "name": "@alphaisyour/server",
+  "version": "0.2.0",
+  "description": "Server-Side Rendering untuk noalphjs — render .eno di Node.js",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,10 +21,11 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@alphaisyour/parser": "workspace:*",
+    "@alphaisyour/compiler": "workspace:*",
     "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {
+    "@types/node": "^20.11.0",
     "typescript": "*",
     "vitest": "*"
   }

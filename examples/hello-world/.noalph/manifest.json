@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "framework": "noalphjs",
+  "buildTime": "2026-06-12T11:40:53.473Z",
+  "components": [
+    "src\\App.eno"
+  ]
+}

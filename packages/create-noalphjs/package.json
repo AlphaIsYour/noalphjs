@@ -1,6 +1,6 @@
 {
   "name": "create-noalph-app",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Scaffolding CLI untuk membuat proyek noalphjs baru",
   "type": "module",
   "bin": {
@@ -33,6 +33,7 @@
     "node": ">=20.0.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "latest"
   }
 }

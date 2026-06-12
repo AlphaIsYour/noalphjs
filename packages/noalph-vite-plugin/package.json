@@ -1,6 +1,6 @@
 {
   "name": "@alphaisyour/vite-plugin",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Vite plugin untuk file .eno — transform, HMR, dan dev server noalphjs",
   "type": "module",
   "main": "./dist/index.cjs",

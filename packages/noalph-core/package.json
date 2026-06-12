@@ -1,6 +1,6 @@
 {
   "name": "@alphaisyour/core",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Runtime inti ekosistem noalphjs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -24,6 +24,8 @@
     "@alphaisyour/compiler": "workspace:*",
     "@alphaisyour/parser": "workspace:*",
     "@alphaisyour/renderer-dom": "workspace:*",
+    "@alphaisyour/router": "workspace:*",
+    "@alphaisyour/server": "workspace:*",
     "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {

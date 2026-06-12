@@ -25,3 +25,7 @@ export type {
   EnoNode,
   EnoNodeType,
 } from '@alphaisyour/shared'
+
+// SEO
+export { setHead } from './head.js'
+export type { HeadOptions } from './head.js'

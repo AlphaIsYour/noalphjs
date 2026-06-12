@@ -111,6 +111,25 @@ importers:
       '@alphaisyour/renderer-dom':
         specifier: workspace:*
         version: link:../noalph-renderer-dom
+      '@alphaisyour/router':
+        specifier: workspace:*
+        version: link:../noalph-router
+      '@alphaisyour/server':
+        specifier: workspace:*
+        version: link:../noalph-server
+      '@alphaisyour/shared':
+        specifier: workspace:*
+        version: link:../noalph-shared
+    devDependencies:
+      typescript:
+        specifier: '*'
+        version: 5.9.3
+      vitest:
+        specifier: '*'
+        version: 1.6.1(@types/node@20.19.43)(jsdom@29.1.1)
+
+  packages/noalph-image:
+    dependencies:
       '@alphaisyour/shared':
         specifier: workspace:*
         version: link:../noalph-shared
@@ -144,6 +163,38 @@ importers:
       jsdom:
         specifier: ^29.1.1
         version: 29.1.1
+      typescript:
+        specifier: '*'
+        version: 5.9.3
+      vitest:
+        specifier: '*'
+        version: 1.6.1(@types/node@20.19.43)(jsdom@29.1.1)
+
+  packages/noalph-router:
+    dependencies:
+      '@alphaisyour/shared':
+        specifier: workspace:*
+        version: link:../noalph-shared
+    devDependencies:
+      typescript:
+        specifier: '*'
+        version: 5.9.3
+      vitest:
+        specifier: '*'
+        version: 1.6.1(@types/node@20.19.43)(jsdom@29.1.1)
+
+  packages/noalph-server:
+    dependencies:
+      '@alphaisyour/compiler':
+        specifier: workspace:*
+        version: link:../noalph-compiler
+      '@alphaisyour/shared':
+        specifier: workspace:*
+        version: link:../noalph-shared
+    devDependencies:
+      '@types/node':
+        specifier: ^20.11.0
+        version: 20.19.43
       typescript:
         specifier: '*'
         version: 5.9.3

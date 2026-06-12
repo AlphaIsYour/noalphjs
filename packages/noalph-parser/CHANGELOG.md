@@ -1,5 +1,13 @@
 # @alphaisyour/parser
 
+## 0.2.2
+
+### Patch Changes
+
+- v2 upgrade: SSR, file-based routing, image optimization, SEO built-in, CLI animasi, folder .noalph/, icon support
+- Updated dependencies
+  - @alphaisyour/shared@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes
