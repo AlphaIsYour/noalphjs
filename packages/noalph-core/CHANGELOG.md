@@ -1,5 +1,13 @@
 # @alphaisyour/core
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @alphaisyour/compiler@0.2.3
+  - @alphaisyour/server@0.2.1
+
 ## 0.3.0
 
 ### Minor Changes

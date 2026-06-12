@@ -1,5 +1,11 @@
 # @alphaisyour/compiler
 
+## 0.2.3
+
+### Patch Changes
+
+- fix: remove duplicate variable declarations in compiled output
+
 ## 0.2.2
 
 ### Patch Changes

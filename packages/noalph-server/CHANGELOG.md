@@ -1,5 +1,12 @@
 # @alphaisyour/server
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @alphaisyour/compiler@0.2.3
+
 ## 0.2.0
 
 ### Minor Changes

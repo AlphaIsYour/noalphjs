@@ -52,9 +52,7 @@ if (import.meta.hot) {
   const code = `// [noalphjs] compiled from: ${filename}
 // DO NOT EDIT — file ini di-generate otomatis
 
-${scriptCode.replace(/^let |^const |^var /gm, '').trim() ? '' : ''}
 export function create${safeComponentName}(props = {}) {
-${stateSetup}
 ${scriptCode
   .replace(/export\s+default[^;{]*/g, '')
   .replace(/import[^;]+;?/g, '')
