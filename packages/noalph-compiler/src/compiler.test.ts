@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { compile } from './compiler'
+import { compile } from './compiler.js'
 
 describe('compile', () => {
   it('menghasilkan JavaScript dari .eno sederhana', () => {

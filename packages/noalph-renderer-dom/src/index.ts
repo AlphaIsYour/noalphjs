@@ -1,3 +1,3 @@
-export { createRenderer } from './renderer'
-export { mount, unmount } from './mount'
-export type { RendererOptions } from './types'
+export { createRenderer } from './renderer.js'
+export { mount, unmount } from './mount.js'
+export type { RendererOptions } from './types.js'

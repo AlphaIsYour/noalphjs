@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parse } from './parser'
+import { parse } from './parser.js'
 
 describe('parse', () => {
   it('mem-parse elemen sederhana', () => {

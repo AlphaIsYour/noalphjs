@@ -1,6 +1,6 @@
 import type { EnoNode } from '@alphaisyour/shared'
-import { tokenize } from './tokenizer'
-import type { ParseResult } from './types'
+import { tokenize } from './tokenizer.js'
+import type { ParseResult } from './types.js'
 
 export function parse(source: string): ParseResult {
   const tokens = tokenize(source)

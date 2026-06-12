@@ -1,4 +1,4 @@
-import type { RendererOptions } from './types'
+import type { RendererOptions } from './types.js'
 
 export function mount(options: RendererOptions): () => void {
   const { container, component, props = {} } = options

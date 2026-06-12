@@ -1,6 +1,6 @@
 {
   "name": "@alphaisyour/renderer-dom",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DOM renderer untuk komponen .eno",
   "type": "module",
   "main": "./dist/index.cjs",

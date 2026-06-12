@@ -1,6 +1,6 @@
 import { parse } from '@alphaisyour/parser'
 import type { EnoNode } from '@alphaisyour/shared'
-import type { CompileOptions, CompileResult } from './types'
+import type { CompileOptions, CompileResult } from './types.js'
 
 export function compile(source: string, options: CompileOptions = {}): CompileResult {
   const { filename = 'anonymous.eno', hmr = false } = options

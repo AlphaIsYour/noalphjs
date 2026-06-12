@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isEnoFile, normalizePort, slugify } from './utils'
+import { isEnoFile, normalizePort, slugify } from './utils.js'
 
 describe('isEnoFile', () => {
   it('mengenali file .eno', () => {

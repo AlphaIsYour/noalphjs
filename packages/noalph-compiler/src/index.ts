@@ -1,2 +1,2 @@
-export { compile } from './compiler'
-export type { CompileResult, CompileOptions } from './types'
+export { compile } from './compiler.js'
+export type { CompileResult, CompileOptions } from './types.js'

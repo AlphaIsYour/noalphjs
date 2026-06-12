@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { createRenderer } from './renderer'
+import { createRenderer } from './renderer.js'
 
 describe('createRenderer', () => {
   it('membuat elemen DOM', () => {

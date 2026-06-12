@@ -1,6 +1,6 @@
 {
   "name": "@alphaisyour/cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CLI resmi noalphjs — noalph dev, build, preview",
   "type": "module",
   "bin": {
