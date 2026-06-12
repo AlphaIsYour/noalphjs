@@ -12,11 +12,11 @@
     "noalph:preview": "noalph preview"
   },
   "dependencies": {
-    "@alphaisyour/renderer-dom": "^0.1.0"
+    "@alphaisyour/renderer-dom": "^0.2.0"
   },
   "devDependencies": {
-    "@alphaisyour/cli": "^0.1.0",
-    "@alphaisyour/vite-plugin": "^0.1.0",
+    "@alphaisyour/cli": "^0.2.0",
+    "@alphaisyour/vite-plugin": "^0.2.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.0"
   }
