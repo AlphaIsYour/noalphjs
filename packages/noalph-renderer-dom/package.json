@@ -24,7 +24,7 @@
     "@alphaisyour/shared": "workspace:*"
   },
   "devDependencies": {
-    "jsdom": "^29.1.1",
+    "jsdom": "^30.0.1",
     "typescript": "*",
     "vitest": "*"
   }
