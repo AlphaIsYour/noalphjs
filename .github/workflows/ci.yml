@@ -57,6 +57,22 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm turbo run lint
 
+  build:
+    name: build
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm turbo run build
+
   test:
     name: Test
     needs: [typecheck, lint]
