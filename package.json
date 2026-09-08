@@ -26,7 +26,7 @@
     "setup": "bash tools/orchestrator/orchestrator.sh setup"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^3.0.2",
     "@types/node": "^20.11.0",
     "prettier": "^3.2.4",
     "turbo": "^1.12.4",
