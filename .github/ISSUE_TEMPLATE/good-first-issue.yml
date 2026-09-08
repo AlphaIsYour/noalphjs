@@ -1,0 +1,63 @@
+name: 🌱 Good First Issue / Task
+description: Template untuk mendaftarkan task ramah kontributor baru dengan konteks lengkap
+labels: ["good first issue", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih telah menyediakan task terarah untuk kontributor baru!
+        Pastikan deskripsi di bawah memberikan konteks yang cukup agar siapapun bisa mengerjakannya tanpa menebak-nebak.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 1. Masalah (Problem)
+      description: Apa masalah yang ingin diselesaikan?
+      placeholder: Jelaskan kondisi saat ini yang perlu diperbaiki...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 2. Mengapa Ini Penting (Why)
+      description: Mengapa perbaikan ini bernilai bagi pengguna atau kontributor lain?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 3. Hasil yang Diharapkan (Expected Behavior)
+      description: Bagaimana perilaku yang diharapkan setelah issue ini selesai?
+    validations:
+      required: true
+  - type: textarea
+    id: possible_approach
+    attributes:
+      label: 4. Pendekatan yang Disarankan (Possible Approach / Hint)
+      description: Berikan petunjuk atau petunjuk file yang relevan untuk membantu kontributor baru memulai.
+      placeholder: |
+        - Buka file packages/...
+        - Modifikasi fungsi ...
+        - Tambahkan unit test di ...
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: 5. Kriteria Penerimaan (Acceptance Criteria)
+      description: Kondisi apa saja yang harus terpenuhi agar PR dapat di-merge?
+      placeholder: |
+        - [ ] Kode fungsi terimplementasi
+        - [ ] Unit test baru ditambahkan dan lulus (pnpm test)
+        - [ ] Pengecekan tipe lulus (pnpm typecheck)
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: 6. Tingkat Kesulitan (Difficulty)
+      options:
+        - Beginner (< 2 jam, dokumentasi/test/typo)
+        - Intermediate (1-3 hari, perbaikan bug/fitur kecil)
+        - Advanced (arsitektur/fitur besar)
+    validations:
+      required: true
